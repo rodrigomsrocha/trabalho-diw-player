@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background-color: #921524;
+  color: #fff;
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+main header {
+  display: flex;
+  flex-direction: column;
+  color: #cda0a5;
+}
+
+.music {
+  display: flex;
+  gap: 3rem;
+  align-items: end;
+}
+
+.music img {
+  width: 24rem;
+  border-radius: 16px;
+}
+
+.music h1 {
+  font-size: 3rem;
+}
+
+.music strong {
+  color: #e1b9be;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+footer .timer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timer .progress {
+  flex: 1;
+  height: 4px;
+  background-color: #bc5c67;
+  border-radius: 2px;
+}
+
+.timer .progress .progress-bar {
+  height: 4px;
+  background-color: #fff;
+  width: 0;
+  border-radius: 2px;
+}
+
+footer .controls {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}
+
+.controls button {
+  background-color: transparent;
+  border: 0;
+  transition: 0.2s;
+}
+
+.controls button:nth-child(3) {
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem;
+}
+
+.controls i {
+  font-size: 2.5rem;
+  color: #e1b9be;
+}
+
+.controls button:nth-child(even):hover i {
+  color: #fff;
+}
+
+.controls button:nth-child(3) i {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    gap: 2rem;
+  }
+
+  main header {
+    align-items: center;
+    font-size: 0.875rem;
+  }
+
+  .music {
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .music img {
+    width: 100%;
+  }
+
+  .music h1 {
+    font-size: 1.5rem;
+  }
+
+  .controls i {
+    font-size: 1.5rem;
+  }
+}

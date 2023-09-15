@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>Media Player</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <span>PLAYING FROM ALBUM</span>
+        <strong>My Beautiful Dark Twisted Fantasy</strong>
+      </header>
+      <div class="music">
+        <img
+          src="assets/mbdtf.jpg"
+          alt="Capa do Album My Beutiful Dark Twisted Fantasy"
+        />
+        <div>
+          <h1>Devil In A New Dress</h1>
+          <strong>Kanye West</strong>
+        </div>
+      </div>
+      <footer>
+        <div class="timer">
+          <span class="current-time">0:00</span>
+          <div class="progress"><div class="progress-bar"></div></div>
+          <span class="duration">0:00</span>
+        </div>
+        <div class="controls">
+          <audio src="assets/diand.mp3"></audio>
+          <button><i class="ph-fill ph-skip-back"></i></button>
+          <button class="play-btn">
+            <i class="play-btn-icon ph-fill ph-play"></i>
+          </button>
+          <button><i class="ph-fill ph-skip-forward"></i></button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
